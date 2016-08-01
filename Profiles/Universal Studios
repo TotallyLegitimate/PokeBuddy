@@ -1,0 +1,24 @@
+<PBProfile>
+	<Name>[FarmArea] Universal Studios</Name>
+	
+	<AvoidPokemon>
+		<Pokemon Id="104" />
+		<Pokemon Id="102" />
+	</AvoidPokemon>
+	
+	<ProfileOrder>
+		<RunCode>
+			Debug.Write("hello world");
+		</RunCode>
+		
+		<While Condition="Niantic.Inventory.FreeSlots == 0">
+			<Wait Time="1000" />
+		</While>
+		
+		<HuntingGrounds>
+			<Hotspot Latitude="28.473304" Longitude="-81.465723" />
+			<Hotspot Latitude="28.477086" Longitude="-81.470165" />
+			<Hotspot Latitude="28.472729" Longitude="-81.473148" />
+		</HuntingGrounds>
+	</ProfileOrder>
+</PBProfile>
